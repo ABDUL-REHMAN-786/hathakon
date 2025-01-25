@@ -1,24 +1,35 @@
-import Image from "next/image";
-import Hero from "@/components/Hero";
-import Latest from "@/components/Latest";
-import Box from "@/components/Box";
-import Card from "@/components/Card";
-import Paraimage from "@/components/Paraimage";
-import Trending from "@/components/Trending";
+'use lient'
 
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import TopCategories from "./components/TopCategories";
+import LatestProducts from "./components/LatestProducts";
+import FeaturedProducts from './components/FeaturedProducts';
+import Offers from "./components/Offers";
+import Unique from "./components/Unique";
+import TrendingProducts from "./components/TrendingProducts";
+import Discount from "./components/Discount";
+import BlogSection from "./components/BlogSection";
+import Newslater from "./components/Newslater";
 
-function Home() {
-  return (
+function Homepage(){
+  return(
     <div>
-
+      <Header />
       <Hero />
-      <Latest />
-      <Box />
-      <Card />
-      <Paraimage/>
-      <Trending />
-
+      <FeaturedProducts />
+      <LatestProducts />
+      <Offers />
+      <Unique />
+      <TrendingProducts />
+      <Discount />
+      <TopCategories />
+      <Newslater />
+      <BlogSection />
+      <Footer />
     </div>
   )
 }
-export default Home
+
+export default Homepage;
